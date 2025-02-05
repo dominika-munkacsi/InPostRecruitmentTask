@@ -32,6 +32,10 @@
        * APPIUM_CONNECTION_RETRY_TIMEOUT - maximum timeout (milliseconds) to wait for retrying to connect to Appium server. Default value: 20_000
        * APPIUM_CONNECTION_RETRY_COUNT - maximum tries to retry to connect to Appium server. Default value: 3
        * APPIUM_TEST_TIMEOUT - maximum duration (milliseconds) of single test. Default value: 60_000
+ 
+ ### Run command from within project's root folder:
+ * npm run android.app - to run Android tests
+ * npm run ios.app - to run iOS tests
 
 ## Known issues:
 Solution provided doesn’t support localisation. It means that if you change language within the app, tests will stop working since accessibility labels of the app's elements are based on the localised strings. It could be resolved by taking the approach that was used in the source repo of the app e.g.:
