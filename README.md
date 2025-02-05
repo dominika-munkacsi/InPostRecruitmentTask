@@ -7,12 +7,13 @@
 
 ## How to run:
 ### Pre-install dependencies:
-0. Steps assume you have pre-configured environment to run Android and iOS tests.
+0. Steps assume you have pre-configured environment to run Android and iOS tests
 1. Appium
-2. WebdriverIO
-3. TypeScript
-4. mocha
-5. Plugins for XCUITest and UIAutomator2
+2. Node.js runtime
+3. WebdriverIO
+4. TypeScript
+5. mocha
+6. Plugins for XCUITest and UIAutomator2
 
 ### Setup environment variables:
    * **Mandatory:**
