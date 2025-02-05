@@ -7,6 +7,7 @@
 
 ## How to run:
 ### Pre-install dependencies:
+0. Steps assume you have pre-configured environment to run Android and iOS tests.
 1. Appium
 2. WebdriverIO
 3. TypeScript
