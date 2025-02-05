@@ -17,6 +17,7 @@ export const config: WebdriverIO.Config = {
             "appium:app": join(process.cwd(), "apps", `Android.SauceLabs.Mobile.Sample.app.${appVersion}.apk`),
             "appium:appWaitActivity": "com.swaglabsmobileapp.MainActivity",
             "appium:newCommandTimeout": process.env.APPIUM_NEW_COMMAND_TIMEOUT || 240,
+            "appium:webviewConnectTimeout": process.env.WEBVIEW_CONNECT_TIMEOUT || 5000
         },
     ],
 };
