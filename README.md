@@ -40,6 +40,7 @@
  * npm run ios.app - to run iOS tests
 
 ## Known issues:
+### No localisation support
 Solution provided doesn’t support localisation. It means that if you change language within the app, tests will stop working since accessibility labels of the app's elements are based on the localised strings. It could be resolved by taking the approach that was used in the source repo of the app e.g.:
 ```
 get cart() {
@@ -47,3 +48,8 @@ get cart() {
 }
 ```
 https://github.com/saucelabs/sample-app-mobile/blob/main/tests/e2e/screenObjects/appHeader.js
+
+
+### App has no Safe Area support
+Swag Labs application doesn't support Safe Area and that causes tests to fail on newer iOS devices. Consider iPhone SE as a target device to run iOS tests
+
